@@ -1,0 +1,445 @@
+:root{
+    /* ===== Colour Variable ===== */
+    --body-color: #fafafa;
+    --box-color: #ffffff;
+    --text-color: #403a3a;
+    --notification-color: #eb413e;
+    --icon-color: #969696;
+    --button-color: #005ac2;
+}
+
+/* ===== Base ===== */
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: var(--body-color);
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+h1, h2, h3, h4, ul, p, button {
+    margin: 0;
+    padding: 0;
+    text-align: start;
+}
+
+img{
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ===== Navbar  CSS ===== */
+.main nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.5rem;
+    height:  4.9rem;
+    position: sticky;
+    top: 0%;
+    z-index: 2;
+    background-color: var(--box-color);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1),
+            0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+nav .logo-box{
+    color: var(--text-color);
+    font-weight: 800;
+    font-family: 'Montserrat Alternates';
+}
+
+nav .menu-box{
+    display: flex;
+    list-style: none;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.menu-box .select-menu .menu{
+    padding: 1.7rem;
+    font-size: medium;
+    font-weight: 600;
+    color: var(--text-color);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.menu-box .select-menu .menu:hover{
+    text-decoration: underline;
+}
+.menu-box .select-menu .dropdown-list{
+    display: none;
+    position: absolute;
+    background-color: var(--box-color);
+    padding: 2.5rem;
+    border: none;
+    z-index: 1;
+}
+.dropdown-list li a{
+    cursor: pointer;
+}
+.dropdown-list li a:hover{
+    text-decoration: underline;
+}
+.select-menu ul li:not(:last-child){
+    margin-bottom: 1.3rem;
+}
+.select-menu:hover  .dropdown-list{
+    display: block;
+}
+
+nav .search-box{
+    color: var(--text-color);
+}
+.search-box input{
+    display: none;
+}
+.search-box i{
+    cursor: pointer;
+}
+
+/* ===== Carousal Slider ===== */
+.carousel {
+    --current-slide: 0;
+    /* we set position relative so absolute position works properly for the buttons */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel-button {
+    /* vertically centering the buttons */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  
+    /* basic styling */
+    padding: 0;
+    margin: 0.5rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+  
+    font-size: 1.5rem;
+    cursor: pointer;
+  
+    transition: color 0.1s;
+  }
+  
+  .carousel-button:hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .carousel-button_next {
+    /* The "next slide button" will be at the right */
+    right: 0;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s;
+    transform: translateX(calc(-100% * var(--current-slide)));
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 40rem;
+  }
+  .slide  img{
+    width: 100%;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .carousel-button {
+      font-size: 2rem;
+      margin: 1rem;
+    }
+  }
+
+/* ===== Main Part CSS ===== */
+.main-box{
+    padding: 3rem 6rem;
+}
+
+.main-box .find-box{
+    color: var(--text-color);
+}
+.main-box .find-box h2{
+    font-family: 'Montserrat Alternates';
+    margin-bottom: 2rem;
+}
+.find-box .find-input div input{
+    width: 85%;
+    height: 3.5rem;
+    border-radius: 0.3rem;
+    border: 0.1rem solid var(--icon-color);
+    outline: none;
+    padding: 0 1.6rem;
+}
+.find-input label{
+    margin-bottom: 0.5rem;
+    font-size: medium;
+    font-weight: 600;
+}
+.find-box .find-input div button{
+    width: 14%;
+    height: 3.5rem;
+    border-radius: 0.3rem;
+    border: 0.1rem solid var(--icon-color);
+    text-align: center;
+    background-color: var(--button-color);
+    color: var(--box-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.main-box .step-box{
+    margin: 4rem 0;
+    color: var(--text-color);
+}
+.step-box h2{
+    font-family: 'Montserrat Alternates';
+    margin-bottom: 5rem;
+}
+.step-box .popup-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.popup-box .box{
+    width: 17rem;
+    height: 17rem;
+    background-color: var(--box-color);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1),
+            0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.box .icon-box{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--button-color);
+    margin-bottom: 2.5rem;
+    position: absolute;
+    top: -15%;
+}
+.icon-box i{
+    font-size: 2rem;
+    color: var(--box-color);
+}
+.box .card-box{
+    margin: 0 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+
+.main-box .service-list{
+
+}
+.service-list h2{
+    font-family: 'Montserrat Alternates';
+    margin-bottom: 2rem;
+}
+.service-list .list-box{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 26rem);
+    grid-row-gap: 5.5rem;
+}
+.list-box .service-card{
+    width: 20rem;
+    background-color: var(--box-color);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1),
+            0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+.service-card img{
+    width: 100%;
+    height: 12rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+.service-card .card-detail{
+    padding: 1rem 2rem;
+    overflow-wrap: break-word;
+}
+.card-detail p{
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+.card-detail button{
+    border: 0.1rem solid var(--icon-color);
+    background-color: var(--button-color);
+    color: var(--box-color);
+    padding: 0.45rem 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+
+.main-box .solution-box{
+    margin-top: 4rem;
+}
+.solution-box h2{
+    font-family: 'Montserrat Alternates';
+    margin-bottom: 4rem;
+}
+.solution-box .design-box{
+    display: flex;
+    justify-content: space-between;
+}
+.solution-box .design-box:not(:last-child){
+    margin-bottom: 5rem;
+}
+.design-box .description-box{
+    
+}
+ .description-box h2{
+    font-family: 'Poppins';
+    margin-bottom: 2rem;
+}
+ .description-box p{
+    width: 30rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.description-box button{
+    background-color: var(--button-color);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+}
+.description-box button a{
+   color: var(--box-color);
+}
+.design-box .solution-img img{
+    width: 40rem;
+    height: 25rem;
+    border-radius: 0.5rem;
+}
+
+
+.main-box .category-box{
+    margin-top: 3rem;
+}
+.category-box h2{
+    margin-bottom: 3rem;
+}
+.category-box .category{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 26rem);
+    grid-row-gap: 5.5rem;
+}
+.category .service-card{
+    width: 20rem;
+    background-color: var(--box-color);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1),
+            0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+
+
+
+
+/* ===== Footer CSS ===== */
+.footer-box{
+    background-color: var(--button-color);
+    color: var(--box-color);
+}
+.footer-box .head-box{
+    padding: 2.5rem 6rem;
+}
+.head-box .name-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.head-box .content-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.content-box .service-box h3,
+.content-box .customer-box h3,
+.content-box .info-box h3,
+.content-box .company-box h3{
+    margin-bottom: 1.2rem;
+}
+.content-box div ul li{
+    margin: 0.7rem 0;
+}
+.content-box div ul li a{
+    cursor: pointer;
+}
+.content-box div ul li a:hover{
+    text-decoration: underline;
+}
+
+.head-box .social-box{
+    padding: 2rem 25rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social-box li a i{
+    font-size: 1.8rem;
+}
+
+
+.footer-box .copyright-box{
+    padding: 2rem 6rem;
+    background-color: #00489b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.copyright-box .opt-box{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.opt-box li{
+    margin-right: 0.9rem;
+    padding-right: 0.9rem;
+    cursor: pointer;
+}
+.opt-box li:not(:last-child){
+    border-right: 0.15rem solid var(--box-color);
+}

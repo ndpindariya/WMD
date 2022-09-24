@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DigiWaste</title>
+
+    <!-- ===== CSS Link ===== -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- ===== Font, Icon & Other Link ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Poppins:ital,wght@0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="main">
+      <!-- ===== Navbar ===== -->
+      <nav>
+        <div class="logo-box">
+          <h2>DigiWaste</h2>
+        </div>
+        <div class="menu-box">
+          <div class="select-menu">
+            <button class="menu">For Business</button>
+            <ul class="dropdown-list">
+              <li><a href="business.html"> Waste Collection Services</a></li>
+              <li><a href="schedule.html">Book Schedule For Collection</a></li>
+              <li><a href="purchase.html">Purchase Waste For Recycling</a></li>
+            </ul>
+          </div>
+          <div class="select-menu">
+            <button class="menu">For Residential</button>
+            <ul class="dropdown-list">
+              <li><a> Waste Collection</a></li>
+              <li><a>Start Services For House</a></li>
+
+              <li><a>Waste Partition On based on recycling</a></li>
+              <li><a>Homeowner's Association</a></li>
+            </ul>
+          </div>
+          <div class="select-menu">
+            <button class="menu">Our Services</button>
+            <ul class="dropdown-list">
+              <li><a> Our Service Area</a></li>
+              <li>
+                <a
+                  >For House, Business, Government Sector, Organization, School
+                  or Colleage</a
+                >
+              </li>
+              <li><a>Purchase Waste For Recycling</a></li>
+              <li><a href="sanitation.html">Sanitation Services</a></li>
+            </ul>
+          </div>
+          <div class="select-menu">
+            <button class="menu">Pricing & Planning</button>
+            <ul class="dropdown-list">
+              <li><a>How we work ?</a></li>
+              <li><a>Where Waste can going ?</a></li>
+              <li><a>View Pricing For different category</a></li>
+              <li><a></a></li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="search-box">
+          <input type="text" placeholder="Search Here..." />
+          <i class="fa-solid fa-search"></i>
+        </div>
+      </nav>
+
+      <!-- ===== Crousal (Image Slider) ===== -->
+      <div class="carousel" data-carousel>
+        <div class="carousel-buttons">
+          <button
+            class="carousel-button carousel-button_previous"
+            data-carousel-button-previous
+          >
+            <span class="fas fa-chevron-circle-left"></span>
+          </button>
+          <button
+            class="carousel-button carousel-button_next"
+            data-carousel-button-next
+          >
+            <span class="fas fa-chevron-circle-right"></span>
+          </button>
+        </div>
+        <div class="slides" data-carousel-slides-container>
+          <div class="slide">
+            <!-- Anything can be here. Each slide can have any content -->
+            <img src="img/home.jpg" alt="first Picture">
+          </div>
+          <div class="slide">
+            <!-- Anything can be here. Each slide can have any content -->
+            <img src="img/industrial.jpg" alt="Second Picture">
+           
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== Main Part Of Website ===== -->
+      <div class="main-box">
+        <div class="find-box">
+                <h2>Find Area For Start Service</h2>
+                <div class="find-input">
+                    <label for="address">Enter Your Address/Pincode</label>
+                    <div>
+                    <input type="text" id="address" name="address" placeholder="81, Royal Palace, Surat">
+                    <button>Search</button>
+                    </div>
+                </div>
+            </div>
+            <div class="step-box">
+                <h2>Three  Step To Start Service</h2>
+                <div class="popup-box">
+                    <div class="first box">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="card-box">
+                            Creat An Account And Take Any Of Subscription
+                        </div>
+                    </div>
+                    <div class="second box">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-dumpster-fire"></i>
+                        </div>
+                        <div class="card-box">
+                            Find Area Of Services & Paying Minimum Charges You Can Start Service
+                        </div>
+                    </div>
+                    <div class="third box">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-mobile"></i>
+                        </div>
+                        <div class="card-box">
+                            Using DigiWaste Application You Can Monitoring Waste Dumpster And Manage Your Account
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service-list">
+                <h2>Available Services</h2>
+                <div class="list-box">
+                    <div class="service-card">
+                        <img src="img/dumpster.jpg" alt="">
+                        <div class="card-detail">
+                            <h3>Dumpster</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, possimus<p>
+                            <button><a>Explore</a></button>        
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="img/truck.jfif" alt="">
+                        <div class="card-detail">
+                            <h3>Pickup Truck</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, possimus<p>
+                            <button><a>Explore</a></button>        
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="img/disposable.jpg" alt="">
+                        <div class="card-detail">
+                            <h3>Dissposable Machine</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, possimus<p>
+                            <button><a>Explore</a></button>        
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="img/hazard.jpg" alt="">
+                        <div class="card-detail">
+                            <h3>Hazardous Waste</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, possimus<p>
+                            <button><a>Explore</a></button>        
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="img/storage.jpg" alt="">
+                        <div class="card-detail">
+                            <h3>Waste Storage</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, possimus<p>
+                            <button><a>Explore</a></button>        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="solution-box">
+          <h2>Solution For Modern Problem</h2>
+          <div class="design-box">
+            <div class="description-box">
+              <h2>Sustainable Technology</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Perferendis inventore quisquam enim officiis magnam amet!
+                Sapiente quisquam natus voluptate eaque.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                necessitatibus cum distinctio minima doloremque molestiae
+                dolores illum et fugit ratione.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
+                illo placeat ad. Porro magni, dolore consectetur similique est
+                maxime labore.
+              </p>
+              <button><a href="#">Learn More</a></button>
+            </div>
+            <div class="solution-img">
+              <img src="img/sustainable.jpg" alt="" />
+            </div>
+          </div>
+          <div class="design-box">
+            <div class="solution-img">
+              <img src="img/electronic.png" alt="" />
+            </div>
+            <div class="description-box">
+              <h2>Electronic Recycling</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Perferendis inventore quisquam enim officiis magnam amet!
+                Sapiente quisquam natus voluptate eaque.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                necessitatibus cum distinctio minima doloremque molestiae
+                dolores illum et fugit ratione.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
+                illo placeat ad. Porro magni, dolore consectetur similique est
+                maxime labore.
+              </p>
+              <button><a href="#">Learn More</a></button>
+            </div>
+          </div>
+          <div class="design-box">
+            <div class="description-box">
+              <h2>Industrial Waste Processing</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Perferendis inventore quisquam enim officiis magnam amet!
+                Sapiente quisquam natus voluptate eaque.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                necessitatibus cum distinctio minima doloremque molestiae
+                dolores illum et fugit ratione.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
+                illo placeat ad. Porro magni, dolore consectetur similique est
+                maxime labore.
+              </p>
+              <button><a href="#">Learn More</a></button>
+            </div>
+            <div class="solution-img">
+              <img src="img/industrial.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="category-box">
+          <h2>Solution By Category</h2>
+          <div class="category">
+            <div class="service-card">
+              <img src="img/medical.jpg" alt="" />
+              <div class="card-detail">
+                <h3>Health Care</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                  possimus
+                </p>
+                <p>
+                  <button><a>Explore</a></button>
+                </p>
+              </div>
+            </div>
+            <div class="service-card">
+              <img src="img/hotel.webp" alt="" />
+              <div class="card-detail">
+                <h3>Restaurent</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                  possimus
+                </p>
+                <p>
+                  <button><a>Explore</a></button>
+                </p>
+              </div>
+            </div>
+            <div class="service-card">
+              <img src="img/sarkar.jpg" alt="" />
+              <div class="card-detail">
+                <h3>Government</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                  possimus
+                </p>
+                <p>
+                  <button><a>Explore</a></button>
+                </p>
+              </div>
+            </div>
+            <div class="service-card">
+              <img src="img/school.jfif" alt="" />
+              <div class="card-detail">
+                <h3>School/College</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                  possimus
+                </p>
+                <p>
+                  <button><a>Explore</a></button>
+                </p>
+              </div>
+            </div>
+            <div class="service-card">
+              <img src="img/industry.jpeg" alt="" />
+              <div class="card-detail">
+                <h3>Industrial</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                  possimus
+                </p>
+                <p>
+                  <button><a>Explore</a></button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== Footer ===== -->
+      <div class="footer-box">
+            <div class="head-box">
+                <div class="name-box">
+                    <h1>DigiWaste</h1>
+                </div>
+                <div class="content-box">
+                    <div class="service-box">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a>Watse Collection & Recycling</a></li>
+                            <li><a> Recycling For Business</a></li>
+                            <li><a>Bulk Watse Pickup</a></li>
+                            <li><a>Watse Disposal</a></li>
+                            <li><a>e-Waste</a></li>
+                        </ul>
+                    </div>
+                    <div class="customer-box">
+                        <h3>Customer Support</h3>
+                        <ul>
+                            <li><a>Manage My Account</a></li>
+                            <li><a>Login To My Account</a></li>
+                            <li><a>Pay My Bill</a></li>
+                            <li><a>Request an Extra Pickup</a></li>
+                            <li><a>Frequently Asked Question</a></li>
+                        </ul>
+                    </div>
+                    <div class="info-box">
+                        <h3>Information</h3>
+                        <ul>
+                            <li><a>Our Service Area</a></li>
+                            <li><a>Recycling Method</a></li>
+                            <li><a>Holiday Schedule</a></li>
+                            <li><a>Drop Your Location</a></li>
+                            <li><a>Services Notification</a></li>
+                        </ul>
+                    </div>
+                    <div class="company-box">
+                        <h3>Our Company</h3>
+                        <ul>
+                            <li><a>Sustainable Solution</a></li>
+                            <li><a>Careers</a></li>
+                            <li><a>Investors</a></li>
+                            <li><a>Suppliers</a></li>
+                            <li><a>Why DigiWaste ?</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="social-box">
+                    <li><a><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a><i class="fa-brands fa-square-twitter"></i></a></li>
+                    <li><a><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a><i class="fa-brands fa-square-youtube"></i></a></li>
+                </div>
+            </div>
+            <div class="copyright-box">
+                <div class="copy-box">
+                    <p>&copy; 2022 DigiWaste Private Limited.</p>
+                </div>
+                <div class="opt-box">
+                    <li><a>Term Of Use</a></li>
+                    <li><a>Privacy Policy</a></li>
+                    <li><a>Accessibility</a></li>
+                    <li><a>Disputes</a></li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== JS File ===== -->
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

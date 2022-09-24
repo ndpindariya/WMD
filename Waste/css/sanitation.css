@@ -1,0 +1,115 @@
+:root{
+    /* ===== Colour Variable ===== */
+    --body-color: #fafafa;
+    --box-color: #ffffff;
+    --text-color: #403a3a;
+    --notification-color: #eb413e;
+    --icon-color: #969696;
+    --button-color: #005ac2;
+}
+
+/* ===== Base ===== */
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: var(--body-color);
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+h1, h2, h3, h4, ul, p, button {
+    margin: 0;
+    padding: 0;
+    text-align: start;
+}
+
+img{
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ===== Navbar  CSS ===== */
+.main nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.5rem;
+    height:  4.9rem;
+    position: sticky;
+    top: 0%;
+    z-index: 2;
+    background-color: var(--box-color);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1),
+            0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+nav .logo-box{
+    color: var(--text-color);
+    font-weight: 800;
+    font-family: 'Montserrat Alternates';
+}
+
+nav .menu-box{
+    display: flex;
+    list-style: none;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.menu-box .select-menu .menu{
+    padding: 1.7rem;
+    font-size: medium;
+    font-weight: 600;
+    color: var(--text-color);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.menu-box .select-menu .menu:hover{
+    text-decoration: underline;
+}
+.menu-box .select-menu .dropdown-list{
+    display: none;
+    position: absolute;
+    background-color: var(--box-color);
+    padding: 2.5rem;
+    border: none;
+    z-index: 1;
+}
+.dropdown-list li a{
+    cursor: pointer;
+}
+.dropdown-list li a:hover{
+    text-decoration: underline;
+}
+.select-menu ul li:not(:last-child){
+    margin-bottom: 1.3rem;
+}
+.select-menu:hover  .dropdown-list{
+    display: block;
+}
+
+nav .search-box{
+    color: var(--text-color);
+}
+.search-box input{
+    display: none;
+}
+.search-box i{
+    cursor: pointer;
+}
